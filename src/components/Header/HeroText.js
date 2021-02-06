@@ -1,4 +1,4 @@
-import { Typography } from '@material-ui/core';
+import { Grid, Typography } from '@material-ui/core';
 import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 
@@ -7,31 +7,36 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     top: 150,
     color: 'white',
-   
-    
   },
-  textWrapper:{
-    width:'80%',
-    margin: "0 auto"
-  }
+  textWrapper: {
+    width: '80%',
+    margin: '0 auto',
+  },
 }));
 
 const MainHeroText = () => {
   const classes = useStyles();
 
   return (
-      <div className = {classes.textWrapper}>
-    <div className={classes.root}>
-      <h1>
-        ProjextXY connects you to a diverse nationwide network of qualified
-        lenders.
-      </h1>
-      <h2>
-        We can help companies with positive cash flow to borrow up to $10
-        Million.
-      </h2>
-    </div>
+    <div>
+      <Grid container spacing={1} className={classes.root} maxWidth={'xl'}>
+        <Grid item xs={6} style={{ textAlign: 'center' }}>
+          <h1>
+            ProjextXY connects you to a diverse nationwide <br />
+            network of qualified lenders.
+          </h1>
+        </Grid>
+        <Grid item xs={6} />
 
+        <Grid item xs={6}>
+          {' '}
+          <Typography variant='subtitle1' style={{ textAlign: 'center' }}>
+            We can help companies with positive cash flow to borrow up to $10
+            Million.
+          </Typography>
+        </Grid>
+        <Grid item xs={6} />
+      </Grid>
     </div>
   );
 };
