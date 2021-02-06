@@ -10,13 +10,22 @@ function Jext() {
   return (
     <List>
       <ListItem>
-        <ListItemText primary='Projext XY' style={{ color: 'white' }}/>
+        <ListItemText style={{ color: 'white' }}>
+          {' '}
+          <h2>ProjextXY</h2>
+        </ListItemText>
       </ListItem>
       <ListItem>
-        <ListItemText primary='It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum' style={{ color: 'white' }}/>
+        <ListItemText
+          primary='It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum'
+          style={{ color: 'white' }}
+        />
       </ListItem>
       <ListItem>
-        <ListItemText primary='Terms of Use | Privacy Policy' style={{ color: 'white' }}/>
+        <ListItemText
+          primary='Terms of Use | Privacy Policy'
+          style={{ color: 'white' }}
+        />
       </ListItem>
     </List>
   );
@@ -26,27 +35,29 @@ function Links() {
   return (
     <List disablePadding>
       <ListItem>
-        <ListItemText primary='Links' style={{ color: 'white', }}/>
+        <ListItemText style={{ color: 'white' }}>
+          <h2>Links</h2>{' '}
+        </ListItemText>
       </ListItem>
       <ListItem>
-        <ArrowForwardIosIcon  style={{ color: 'white', height:"13px"}} />
+        <ArrowForwardIosIcon style={{ color: 'white', height: '13px' }} />
         <ListItemText primary='About Us' style={{ color: 'white' }} />
       </ListItem>
       <ListItem>
-        <ArrowForwardIosIcon  style={{ color: 'white' , height:"13px" }}/>
+        <ArrowForwardIosIcon style={{ color: 'white', height: '13px' }} />
         <ListItemText primary='Services' style={{ color: 'white' }} />
       </ListItem>
       <ListItem>
-        <ArrowForwardIosIcon  style={{ color: 'white' , height:"13px" }}/>
-        <ListItemText primary='Projects' style={{ color: 'white' }}/>
+        <ArrowForwardIosIcon style={{ color: 'white', height: '13px' }} />
+        <ListItemText primary='Projects' style={{ color: 'white' }} />
       </ListItem>
       <ListItem>
-        <ArrowForwardIosIcon  style={{ color: 'white' , height:"13px" }} />
-        <ListItemText primary='Careers'style={{ color: 'white' }} />
+        <ArrowForwardIosIcon style={{ color: 'white', height: '13px' }} />
+        <ListItemText primary='Careers' style={{ color: 'white' }} />
       </ListItem>
       <ListItem>
-        <ArrowForwardIosIcon  style={{ color: 'white' , height:"13px" }}/>
-        <ListItemText primary='Contact Us' style={{ color: 'white' }}/>
+        <ArrowForwardIosIcon style={{ color: 'white', height: '13px' }} />
+        <ListItemText primary='Contact Us' style={{ color: 'white' }} />
       </ListItem>
     </List>
   );
@@ -56,7 +67,10 @@ function ContactUs() {
   return (
     <List>
       <ListItem>
-        <ListItemText primary='Contact Us' style={{ color: 'white' }} />
+        <ListItemText style={{ color: 'white' }}>
+          {' '}
+          <h2>Contact Us</h2>
+        </ListItemText>
       </ListItem>
 
       <ListItem>
@@ -69,21 +83,23 @@ function FollowUs() {
   return (
     <List>
       <ListItem>
-        <ListItemText primary='Follow Us' style={{ color: 'white' }} />
+        <ListItemText style={{ color: 'white' }}>
+          <h2>Follow Us</h2>{' '}
+        </ListItemText>
       </ListItem>
       <ListItem>
         <Grid container>
           <Grid item xs={1}>
-            <FacebookIcon  style={{ color: 'white' }}/>
+            <FacebookIcon style={{ color: 'white' }} />
           </Grid>
           <Grid item xs={1}>
             <InstagramIcon style={{ color: 'white' }} />
           </Grid>
           <Grid item xs={1}>
-            <LinkedInIcon  style={{ color: 'white' }}/>
+            <LinkedInIcon style={{ color: 'white' }} />
           </Grid>
           <Grid item xs={1}>
-            <TwitterIcon  style={{ color: 'white' }} />
+            <TwitterIcon style={{ color: 'white' }} />
           </Grid>
         </Grid>
       </ListItem>
@@ -95,17 +111,17 @@ const index = () => {
   return (
     <div>
       <Paper elevation={3} style={{ background: '#228B22', marginTop: '20' }}>
-        <Grid container>
-          <Grid item xs={3} style={{ textAlign: 'center' }}>
+        <Grid container alignContent='space-between'>
+          <Grid item xs={3}>
             <Jext />
           </Grid>
-          <Grid item xs={3} style={{ textAlign: 'right' }}>
+          <Grid item xs={3}>
             <Links />
           </Grid>
-          <Grid item xs={3} style={{ textAlign: 'center' }}>
+          <Grid item xs={3}>
             <FollowUs />
           </Grid>
-          <Grid item xs={3} style={{ textAlign: 'center' }}>
+          <Grid item xs={3}>
             <ContactUs />
           </Grid>
         </Grid>

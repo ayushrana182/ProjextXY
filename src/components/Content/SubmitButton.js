@@ -5,7 +5,7 @@ const SubmitButton = () => {
   return (
     <div>
       <Button variant='contained' disabled>
-        Disabled
+        Submit
       </Button>
     </div>
   );

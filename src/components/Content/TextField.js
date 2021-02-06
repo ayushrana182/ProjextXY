@@ -1,9 +1,13 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import TextField from '@material-ui/core/TextField';
 import MenuItem from '@material-ui/core/MenuItem';
 import Typography from '@material-ui/core/Typography';
 import { Grid } from '@material-ui/core';
+
+import InputLabel from '@material-ui/core/InputLabel';
+
+import FormControl from '@material-ui/core/FormControl';
+import Select from '@material-ui/core/Select';
 
 function Header() {
   return (
@@ -21,18 +25,15 @@ function Header() {
             All data are protected and personal information will not be sold.
           </Typography>
         </Grid>
-     
       </Grid>
     </>
   );
 }
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    '& .MuiTextField-root': {
-      margin: theme.spacing(4),
-      width: '35ch',
-    },
+  formControl: {
+    margin: theme.spacing(1),
+    minWidth: 120,
   },
 }));
 
@@ -42,88 +43,181 @@ export default function MultilineTextFields() {
   return (
     <>
       <Header />
-      <form className={classes.root} noValidate autoComplete='off'>
-        <div>
-          <TextField
-            id='standard-select-currency'
-            select
-            label='Company Sales Range'
-            variant='outlined'
-          >
-            <option>1-2 Million</option>
-            <option>3-5 Million</option>
-            <option>5-7 Million</option>
-            <option>7-9 Million</option>
-          </TextField>
-          <TextField
-            id='standard-select-currency-native'
-            select
-            label='EBITDA'
-            variant='outlined'
-          ></TextField>
-        </div>
-        <div>
-          <TextField
-            id='filled-select-currency'
-            select
-            label='Industry'
-            variant='outlined'
-          >
-            <option>50,000 - 500,000</option>
-            <option>500k-1 Million</option>
-            <option>1-3 Million</option>
-            <option>3-5 Million</option>
-          </TextField>
-          <TextField
-            id='filled-select-currency-native'
-            select
-            label='Loan Type'
-            variant='outlined'
-          ></TextField>
-        </div>
-        <div>
-          <TextField
-            id='outlined-select-currency'
-            select
-            label='Loan Term'
-            variant='outlined'
-          ></TextField>
-          <TextField
-            id='outlined-select-currency-native'
-            select
-            label='Lorem Ipsum'
-            variant='outlined'
-          ></TextField>
-        </div>
-        <div>
-          <TextField
-            id='outlined-select-currency'
-            select
-            label='Lorem Ipsum'
-            variant='outlined'
-          ></TextField>
-          <TextField
-            id='outlined-select-currency-native'
-            select
-            label='Lorem Ipsum'
-            variant='outlined'
-          ></TextField>
-        </div>
-        <div>
-          <TextField
-            id='outlined-select-currency'
-            select
-            label='Lorem Ipsum'
-            variant='outlined'
-          ></TextField>
-          <TextField
-            id='outlined-select-currency-native'
-            select
-            label='Lorem Ipsum'
-            variant='outlined'
-          ></TextField>
-        </div>
-      </form>
+      <Grid container className={classes.root}>
+        {/* ------------1------------ */}
+      <Grid item xs ={6}>
+        <FormControl className={classes.formControl}>
+          <InputLabel htmlFor='grouped-native-select'>Lorem Ipsum</InputLabel>
+          <Select defaultValue='' id='grouped-select'>
+            <MenuItem value=''>
+              <em>None</em>
+            </MenuItem>
+
+            <MenuItem value={1}>Option 1</MenuItem>
+            <MenuItem value={2}>Option 2</MenuItem>
+
+            <MenuItem value={3}>Option 3</MenuItem>
+            <MenuItem value={4}>Option 4</MenuItem>
+          </Select>
+        </FormControl>
+        </Grid>
+        {/* ------------2------------ */}
+        <Grid item xs ={6}>
+        <FormControl className={classes.formControl}>
+          <InputLabel htmlFor='grouped-select'>Lorem Ipsum</InputLabel>
+          <Select defaultValue='' id='grouped-select'>
+            <MenuItem value=''>
+              <em>None</em>
+            </MenuItem>
+
+            <MenuItem value={1}>Option 1</MenuItem>
+            <MenuItem value={2}>Option 2</MenuItem>
+
+            <MenuItem value={3}>Option 3</MenuItem>
+            <MenuItem value={4}>Option 4</MenuItem>
+          </Select>
+        </FormControl>
+        </Grid>
+        {/* ------------3------------ */}
+        <Grid item xs ={6}>
+        <FormControl className={classes.formControl}>
+          <InputLabel htmlFor='grouped-select'>Lorem Ipsum</InputLabel>
+          <Select defaultValue='' id='grouped-select'>
+            <MenuItem value=''>
+              <em>None</em>
+            </MenuItem>
+
+            <MenuItem value={1}>Option 1</MenuItem>
+            <MenuItem value={2}>Option 2</MenuItem>
+
+            <MenuItem value={3}>Option 3</MenuItem>
+            <MenuItem value={4}>Option 4</MenuItem>
+          </Select>
+        </FormControl>
+        </Grid>
+        {/* ------------4------------ */}
+
+        <Grid item xs ={6}>
+        <FormControl className={classes.formControl}>
+          <InputLabel htmlFor='grouped-select'>Lorem Ipsum</InputLabel>
+          <Select defaultValue='' id='grouped-select'>
+            <MenuItem value=''>
+              <em>None</em>
+            </MenuItem>
+
+            <MenuItem value={1}>Option 1</MenuItem>
+            <MenuItem value={2}>Option 2</MenuItem>
+
+            <MenuItem value={3}>Option 3</MenuItem>
+            <MenuItem value={4}>Option 4</MenuItem>
+          </Select>
+        </FormControl>
+        </Grid>
+        {/* ------------5------------ */}
+        <Grid item xs ={6}>
+        <FormControl className={classes.formControl}>
+          <InputLabel htmlFor='grouped-select'>Lorem Ipsum</InputLabel>
+          <Select defaultValue='' id='grouped-select'>
+            <MenuItem value=''>
+              <em>None</em>
+            </MenuItem>
+
+            <MenuItem value={1}>Option 1</MenuItem>
+            <MenuItem value={2}>Option 2</MenuItem>
+
+            <MenuItem value={3}>Option 3</MenuItem>
+            <MenuItem value={4}>Option 4</MenuItem>
+          </Select>
+        </FormControl>
+        </Grid>
+        {/* ------------6------------ */}
+        <Grid item xs ={6}>
+        <FormControl className={classes.formControl}>
+          <InputLabel htmlFor='grouped-select'>Lorem Ipsum</InputLabel>
+          <Select defaultValue='' id='grouped-select'>
+            <MenuItem value=''>
+              <em>None</em>
+            </MenuItem>
+
+            <MenuItem value={1}>Option 1</MenuItem>
+            <MenuItem value={2}>Option 2</MenuItem>
+
+            <MenuItem value={3}>Option 3</MenuItem>
+            <MenuItem value={4}>Option 4</MenuItem>
+          </Select>
+        </FormControl>
+        </Grid>
+        {/* ------------7------------ */}
+        <Grid item xs ={6}>
+        <FormControl className={classes.formControl}>
+          <InputLabel htmlFor='grouped-select'>Lorem Ipsum</InputLabel>
+          <Select defaultValue='' id='grouped-select'>
+            <MenuItem value=''>
+              <em>None</em>
+            </MenuItem>
+
+            <MenuItem value={1}>Option 1</MenuItem>
+            <MenuItem value={2}>Option 2</MenuItem>
+
+            <MenuItem value={3}>Option 3</MenuItem>
+            <MenuItem value={4}>Option 4</MenuItem>
+          </Select>
+        </FormControl>
+        </Grid>
+        {/* ------------8------------ */}
+        <Grid item xs ={6}>
+        <FormControl className={classes.formControl}>
+          <InputLabel htmlFor='grouped-select'>Lorem Ipsum</InputLabel>
+          <Select defaultValue='' id='grouped-select'>
+            <MenuItem value=''>
+              <em>None</em>
+            </MenuItem>
+
+            <MenuItem value={1}>Option 1</MenuItem>
+            <MenuItem value={2}>Option 2</MenuItem>
+
+            <MenuItem value={3}>Option 3</MenuItem>
+            <MenuItem value={4}>Option 4</MenuItem>
+          </Select>
+        </FormControl>
+        </Grid>
+        {/* ------------9------------ */}
+        <Grid item xs ={6}>
+        <FormControl className={classes.formControl}>
+          <InputLabel htmlFor='grouped-select'>Lorem Ipsum</InputLabel>
+          <Select defaultValue='' id='grouped-select'>
+            <MenuItem value=''>
+              <em>None</em>
+            </MenuItem>
+
+            <MenuItem value={1}>Option 1</MenuItem>
+            <MenuItem value={2}>Option 2</MenuItem>
+
+            <MenuItem value={3}>Option 3</MenuItem>
+            <MenuItem value={4}>Option 4</MenuItem>
+          </Select>
+        </FormControl>
+        </Grid>
+        {/* ------------10------------ */}
+        
+        <Grid item xs ={6}>
+
+        <FormControl className={classes.formControl}>
+          <InputLabel htmlFor='grouped-select'>Lorem Ipsum</InputLabel>
+          <Select defaultValue='' id='grouped-select'>
+            <MenuItem value=''>
+              <em>None</em>
+            </MenuItem>
+
+            <MenuItem value={1}>Option 1</MenuItem>
+            <MenuItem value={2}>Option 2</MenuItem>
+
+            <MenuItem value={3}>Option 3</MenuItem>
+            <MenuItem value={4}>Option 4</MenuItem>
+          </Select>
+        </FormControl>
+        </Grid>
+      </Grid>
     </>
   );
 }

@@ -14,7 +14,7 @@ const index = () => {
       <ImageSection stlye={{ marginBottom: '10px' }} />
       <Paper elevation={3} style={{ background: '#DCDCDC', marginTop:"20" }} >
         <Grid container style={{ textAlign: 'center' }} spacing={5}>
-          <Grid item xs={12}>
+          <Grid item xs={12} >
             <MultilineTextFields />
           </Grid>
           <Grid item xs={3} xl={4} />
