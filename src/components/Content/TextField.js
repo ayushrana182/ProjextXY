@@ -43,9 +43,9 @@ export default function MultilineTextFields() {
   return (
     <>
       <Header />
-      <Grid container className={classes.root}>
+      <Grid container className={classes.root} spacing={4}>
         {/* ------------1------------ */}
-      <Grid item xs ={6}>
+      <Grid item xs ={6} style={{textAlign:"right"}}>
         <FormControl className={classes.formControl}>
           <InputLabel htmlFor='grouped-native-select'>Lorem Ipsum</InputLabel>
           <Select defaultValue='' id='grouped-select'>
@@ -62,7 +62,7 @@ export default function MultilineTextFields() {
         </FormControl>
         </Grid>
         {/* ------------2------------ */}
-        <Grid item xs ={6}>
+        <Grid item xs ={6} style={{textAlign:"left"}}>
         <FormControl className={classes.formControl}>
           <InputLabel htmlFor='grouped-select'>Lorem Ipsum</InputLabel>
           <Select defaultValue='' id='grouped-select'>
@@ -79,7 +79,7 @@ export default function MultilineTextFields() {
         </FormControl>
         </Grid>
         {/* ------------3------------ */}
-        <Grid item xs ={6}>
+        <Grid item xs ={6} style={{textAlign:"right"}}>
         <FormControl className={classes.formControl}>
           <InputLabel htmlFor='grouped-select'>Lorem Ipsum</InputLabel>
           <Select defaultValue='' id='grouped-select'>
@@ -97,7 +97,7 @@ export default function MultilineTextFields() {
         </Grid>
         {/* ------------4------------ */}
 
-        <Grid item xs ={6}>
+        <Grid item xs ={6} style={{textAlign:"left"}}>
         <FormControl className={classes.formControl}>
           <InputLabel htmlFor='grouped-select'>Lorem Ipsum</InputLabel>
           <Select defaultValue='' id='grouped-select'>
@@ -114,7 +114,7 @@ export default function MultilineTextFields() {
         </FormControl>
         </Grid>
         {/* ------------5------------ */}
-        <Grid item xs ={6}>
+        <Grid item xs ={6} style={{textAlign:"right"}}>
         <FormControl className={classes.formControl}>
           <InputLabel htmlFor='grouped-select'>Lorem Ipsum</InputLabel>
           <Select defaultValue='' id='grouped-select'>
@@ -131,7 +131,7 @@ export default function MultilineTextFields() {
         </FormControl>
         </Grid>
         {/* ------------6------------ */}
-        <Grid item xs ={6}>
+        <Grid item xs ={6} style={{textAlign:"left"}}>
         <FormControl className={classes.formControl}>
           <InputLabel htmlFor='grouped-select'>Lorem Ipsum</InputLabel>
           <Select defaultValue='' id='grouped-select'>
@@ -148,7 +148,7 @@ export default function MultilineTextFields() {
         </FormControl>
         </Grid>
         {/* ------------7------------ */}
-        <Grid item xs ={6}>
+        <Grid item xs ={6} style={{textAlign:"right"}}>
         <FormControl className={classes.formControl}>
           <InputLabel htmlFor='grouped-select'>Lorem Ipsum</InputLabel>
           <Select defaultValue='' id='grouped-select'>
@@ -165,7 +165,7 @@ export default function MultilineTextFields() {
         </FormControl>
         </Grid>
         {/* ------------8------------ */}
-        <Grid item xs ={6}>
+        <Grid item xs ={6} style={{textAlign:"left"}}>
         <FormControl className={classes.formControl}>
           <InputLabel htmlFor='grouped-select'>Lorem Ipsum</InputLabel>
           <Select defaultValue='' id='grouped-select'>
@@ -182,7 +182,7 @@ export default function MultilineTextFields() {
         </FormControl>
         </Grid>
         {/* ------------9------------ */}
-        <Grid item xs ={6}>
+        <Grid item xs ={6} style={{textAlign:"right"}}>
         <FormControl className={classes.formControl}>
           <InputLabel htmlFor='grouped-select'>Lorem Ipsum</InputLabel>
           <Select defaultValue='' id='grouped-select'>
@@ -200,7 +200,7 @@ export default function MultilineTextFields() {
         </Grid>
         {/* ------------10------------ */}
         
-        <Grid item xs ={6}>
+        <Grid item xs ={6} style={{textAlign:"left"}}>
 
         <FormControl className={classes.formControl}>
           <InputLabel htmlFor='grouped-select'>Lorem Ipsum</InputLabel>

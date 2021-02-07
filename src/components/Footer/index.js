@@ -89,16 +89,16 @@ function FollowUs() {
       </ListItem>
       <ListItem>
         <Grid container>
-          <Grid item xs={1}>
+          <Grid item lg={1} xs={3}>
             <FacebookIcon style={{ color: 'white' }} />
           </Grid>
-          <Grid item xs={1}>
+          <Grid item lg={1} xs={3}>
             <InstagramIcon style={{ color: 'white' }} />
           </Grid>
-          <Grid item xs={1}>
+          <Grid item lg={1} xs={3}>
             <LinkedInIcon style={{ color: 'white' }} />
           </Grid>
-          <Grid item xs={1}>
+          <Grid item lg={1} xs={3}>
             <TwitterIcon style={{ color: 'white' }} />
           </Grid>
         </Grid>
