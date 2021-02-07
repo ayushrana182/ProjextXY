@@ -3,18 +3,18 @@ import React from 'react';
 import Header from './Header';
 import MultilineTextFields from './TextField';
 import LinearWithValueLabel from './ProgressBar';
-import SubmitButton from './SubmitButton';
 import Rocket from '../../assets/rocket.png';
 import ImageSection from './ImageSection';
+import SimpleModal from './Modal';
 
 const index = () => {
   return (
     <div>
       <Header />
       <ImageSection stlye={{ marginBottom: '10px' }} />
-      <Paper elevation={3} style={{ background: '#DCDCDC', marginTop:"20" }} >
+      <Paper elevation={3} style={{ background: '#DCDCDC', marginTop: '20' }}>
         <Grid container style={{ textAlign: 'center' }} spacing={5}>
-          <Grid item xs={12} >
+          <Grid item xs={12}>
             <MultilineTextFields />
           </Grid>
           <Grid item xs={3} xl={4} />
@@ -23,14 +23,10 @@ const index = () => {
             <LinearWithValueLabel />
           </Grid>
           <Grid item xs={2} xl={1} style={{ textAlign: 'center' }}>
-            <SubmitButton />
+            <SimpleModal />
           </Grid>
           <Grid item xs={3}>
-            <img
-              src={Rocket}
-              alt='Rocket'
-              style={{ width: '300px', top: '0' }}
-            />
+            <img src={Rocket} alt='Rocket' style={{ width: '300px' }} />
           </Grid>
         </Grid>
       </Paper>

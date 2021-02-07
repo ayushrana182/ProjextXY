@@ -15,6 +15,38 @@ const RoundDiv = styled.div`
 	-webkit-border-radius: 50px;
 	border-radius: 250px;
   box-shadow: 5px 5px 5px grey;
+  position:absolute;
+  top:20px;
+  left:75px
+
+
+`;
+const RoundDiv1 = styled.div`
+  width: 250px;
+	height: 250px;
+	background: whitesmoke;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 250px;
+  box-shadow: 5px 5px 5px grey;
+  position:absolute;
+  top:20px;
+  left:425px
+
+
+`;
+const RoundDiv2 = styled.div`
+  width: 250px;
+	height: 250px;
+	background: whitesmoke;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 250px;
+  box-shadow: 5px 5px 5px grey;
+  position:absolute;
+  top:20px;
+  left:835px
+
 
 `;
 
@@ -22,39 +54,39 @@ const RoundDiv = styled.div`
 
 const ImageSection = () => {
   return (
-    <div>
+    <div style={{position:'relative'}}>
       <Grid container style={{marginBottom:"50px"}}>
         <Grid item lg={4} sm={12} style={{ textAlign: 'right' }}>
           <img src={Circle2} alt='Cicle' style={{ maxWidth: '350px' }} />
           
           <RoundDiv>
-          <img src={CompanyPic} alt='Cicle'  />
-          <h2 style={{color:"#ffa500"}}>COMPANY NAME</h2>
-          <Typography variant='subtitle1' gutterBottom color='textSecondary'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <img style={{position:"absolute",top:'5px',right:'100px'}} src={CompanyPic} alt='Cicle'  />
+          <h2 style={{color:"#ffa500", position:'absolute',top:"45px",left:'40px'}}>COMPANY NAME</h2>
+          <Typography style={{position:'absolute',top:'88px',width:'225px'}} variant='subtitle1' gutterBottom color='textSecondary' >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           </Typography>
             </RoundDiv>
 
         </Grid>
         <Grid item lg={4} sm={12}>
           <img src={Circle2} alt='Cicle' style={{ maxWidth: '350px' }} />
-          <RoundDiv>
-          <img src={LoginPic} alt='Cicle'  />
-          <h2 style={{color:"#87e7eb"}}>LOGIN CREDENTIALS</h2>
-          <Typography variant='subtitle1' gutterBottom color='textSecondary'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <RoundDiv1 >
+          <img   style={{position:"absolute",top:'5px',right:'100px'}} src={LoginPic} alt='Cicle'  />
+          <h2 style={{color:"#87e7eb",position:'absolute',top:"40px",left:'28px'}}>LOGIN CREDENTIAL</h2>
+          <Typography style={{position:'absolute',top:'88px',width:'210px' ,left:'20px'}} variant='subtitle1' gutterBottom color='textSecondary'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod eiusmod  
           </Typography>
-            </RoundDiv>
+            </RoundDiv1>
         </Grid>
         <Grid item lg={4} sm={12}>
-          <img src={Circle1} alt='Cicle' style={{ maxWidth: '278px' }} />
-          <RoundDiv>
-          <img src={ReportPic} alt='Cicle'  />
-          <h2 style={{color:"#90ee90"}}>PROJEXTXY REPORT</h2>
-          <Typography variant='subtitle1' gutterBottom color='textSecondary'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <img  src={Circle1} alt='Cicle' style={{ maxWidth: '278px' }} />
+          <RoundDiv2>
+          <img  style={{position:"absolute",top:'5px',right:'100px'}} src={ReportPic} alt='Cicle'  />
+          <h2 style={{color:"#90ee90",position:'absolute',top:"40px",left:'22px'}}>PROJEXT REPORT</h2>
+          <Typography style={{position:'absolute',top:'88px',width:'225px',left:'20px'}} variant='subtitle1' gutterBottom color='textSecondary'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
           </Typography>
-            </RoundDiv>
+            </RoundDiv2>
         </Grid>
       </Grid>
     </div>
